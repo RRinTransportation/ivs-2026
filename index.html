@@ -5,72 +5,248 @@
   <meta name="generator" content="quarto-1.8.26">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-  <title>Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds</title>
-  <meta name="description" content="A Half-day Workshop at IV 2026">
+  <title>Workshop on Open Science for Intelligent Vehicles | IEEE IV 2026</title>
+  <meta name="description" content="Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds. A half-day workshop at IEEE IV 2026.">
   
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Workshop on Open Science for Intelligent Vehicles | IEEE IV 2026">
+  <meta property="og:description" content="Join us for a half-day workshop on datasets, benchmarks, and testbeds for intelligent vehicles at IEEE IV 2026.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Workshop on Open Science for Intelligent Vehicles | IEEE IV 2026">
+  <meta property="twitter:description" content="Join us for a half-day workshop on datasets, benchmarks, and testbeds for intelligent vehicles at IEEE IV 2026.">
 
-    /* Simple citation styling */
-    .cite-note { font-size: 0.95rem; opacity: 0.9; }
-    .how-to-cite { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); }
-    pre.bibtex { background: rgba(0,0,0,0.04); padding: 1rem; overflow-x: auto; font-size: 0.85rem; }
-    sup a { text-decoration: none; }
-    
-    /* Added styles for content layout */
+  <style>
+    /* Use theme variables from styles.css */
     .content-container {
-        max-width: 1000px;
+        max-width: 900px;
         margin: 0 auto;
-        padding: 2rem 1rem;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        color: #333;
+        padding: 4rem 1.5rem;
     }
-    h1 { font-size: 2.2rem; margin-bottom: 1rem; color: #2c3e50; }
-    h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
-    h3 { font-size: 1.2rem; margin-top: 1.5rem; color: #555; }
+    
+    .workshop-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    .workshop-header h1 {
+        font-size: 2.2rem;
+        color: var(--primary-dark);
+        margin-bottom: 0.5rem;
+    }
+    
+    .workshop-header .subtitle {
+        font-size: 1.3rem;
+        font-family: 'Cormorant', serif;
+        color: var(--text-light);
+        font-style: italic;
+    }
+    
+    .workshop-header .event-info {
+        margin-top: 1.5rem;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+
     .abstract-box {
-        background-color: #f8f9fa;
-        border-left: 5px solid #007bff;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        line-height: 1.6;
+        background-color: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 2.5rem;
+        margin-bottom: 4rem;
+        box-shadow: var(--shadow-md);
+        line-height: 1.8;
+        position: relative;
     }
-    .schedule-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 2rem;
+    
+    .abstract-box::before {
+        content: "Abstract";
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background: var(--primary-color);
+        color: white;
+        padding: 2px 15px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
-    .schedule-table th, .schedule-table td {
-        padding: 0.75rem;
-        vertical-align: top;
-        border-bottom: 1px solid #dee2e6;
+
+    .schedule-section { margin-bottom: 4rem; }
+    
+    .section-header { 
+        font-size: 1.8rem; 
+        color: var(--primary-dark); 
+        margin-bottom: 2rem; 
+        text-align: center;
+        position: relative;
     }
-    .schedule-table th {
-        background-color: #f1f3f5;
-        text-align: left;
-        width: 150px;
+    
+    .section-header::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: var(--secondary-color);
+        margin: 10px auto 0;
     }
-    .time-slot { font-weight: bold; color: #495057; }
-    .session-title { font-weight: bold; font-size: 1.05rem; }
-    .speaker { font-style: italic; color: #666; display: block; margin-top: 0.25rem; }
-    .panel-details { font-size: 0.9rem; margin-top: 0.5rem; margin-left: 1rem; }
-    .organizer-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
+
+    .session-card { 
+        background: #fff; 
+        border: 1px solid var(--border-color); 
+        border-radius: 12px; 
+        padding: 2rem; 
+        margin-bottom: 1.5rem; 
+        transition: var(--transition);
+        box-shadow: var(--shadow-sm);
     }
-    .organizer-item { margin-bottom: 1rem; }
+    
+    .session-card:hover {
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-light);
+    }
+
+    .session-card .time-slot { 
+        display: inline-block; 
+        background: var(--bg-cream); 
+        color: var(--primary-dark); 
+        padding: 0.4rem 1rem; 
+        border-radius: 30px; 
+        font-weight: 700; 
+        margin-bottom: 1rem; 
+        font-size: 0.85rem; 
+        border: 1px solid var(--secondary-color);
+    }
+
+    .session-card .session-title { 
+        font-size: 1.25rem; 
+        margin-bottom: 0.5rem; 
+        color: var(--primary-dark); 
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+    }
+
+    .speaker, .moderator { 
+        display: block; 
+        margin-top: 0.5rem; 
+        font-size: 0.95rem; 
+    }
+    
+    .speaker { color: var(--primary-color); font-style: italic; }
+    .moderator { color: var(--text-light); font-weight: 500; }
+
+    .panel-details { 
+        font-size: 0.9rem; 
+        margin-top: 1.5rem; 
+        padding-top: 1.5rem; 
+        border-top: 1px solid var(--border-color); 
+    }
+    
+    .panel-details ul {
+        padding-left: 1.2rem;
+        margin-top: 1rem;
+    }
+    
+    .panel-details li {
+        margin-bottom: 0.8rem;
+    }
+
+    .discussion-topic { 
+        background-color: var(--bg-cream); 
+        border: 1px solid var(--border-color);
+        border-left: 6px solid var(--secondary-color); 
+        padding: 1.5rem 2rem; 
+        margin-top: 2rem; 
+        border-radius: 8px; 
+        position: relative;
+    }
+
+    .discussion-topic::before {
+        content: "Breakout Discussion Topic";
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--primary-dark);
+        margin-bottom: 1rem;
+        letter-spacing: 0.12em;
+    }
+
+    .discussion-topic-text {
+        font-size: 1.3rem;
+        color: var(--primary-dark);
+        line-height: 1.5;
+        font-family: 'Karla', sans-serif;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .organizer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .organizer-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem 1rem;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      flex: 0 1 220px;
+    }
+    
+    .organizer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .organizer-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.2rem;
+      border: 4px solid var(--bg-cream);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .organizer-name {
+      display: block;
+      font-weight: 700;
+      color: var(--text-dark);
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      font-family: 'Cormorant', serif;
+    }
+    
+    .organizer-affiliation {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
   </style>
 
   <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -118,135 +294,147 @@
 
 <div class="content-container">
     
-    
-    <h1>Trustworthy and Open Science for Intelligent Vehicles</h1>
-    <p class="lead"><strong>Datasets, Benchmarks, and Testbeds</strong><br>
-    <em>A Half-day Workshop at IV 2026</em></p>
+    <header class="workshop-header">
+        <h1>Trustworthy and Open Science for Intelligent Vehicles</h1>
+        <div class="subtitle">Datasets, Benchmarks, and Testbeds</div>
+        <div class="event-info">A Half-day Workshop at IEEE Intelligent Vehicles Symposium 2026</div>
+    </header>
 
     <div class="abstract-box">
-        <h3>Abstract</h3>
-        <p>Intelligent vehicle research is benefiting greatly from open datasets, benchmarks, and testbeds. Without trustworthy datasets, transparent benchmarks, and credible testbeds, the field can't measure progress, let alone accelerate it.</p>
-        <p>This half-day workshop brings together open dataset contributors, benchmark creators, testbed operators, and open science practitioners to bridge that gap head-on. The session highlights emerging open datasets, large-scale simulation and evaluation frameworks, and next-generation physical and virtual testbeds that enable reproducible, comparable, and interpretable research.</p>
-        <p>Through plenary talks and three focused panels, participants will examine what data is still missing, what we should be measuring when designing benchmarks, and where future investments in testbeds can most effectively raise the rigor of the community's work.</p>
+        Intelligent vehicle research is benefiting greatly from open datasets, benchmarks and testbeds. Without trustworthy datasets, transparent benchmarks, and credible testbeds, the field can’t measure progress, let alone accelerate it. This half-day workshop brings together open dataset contributors, benchmark creators, testbed operators, and many open science practitioners to bridge that gap head-on. The session highlights emerging open datasets, large-scale simulation and evaluation frameworks, and next-generation physical and virtual testbeds that enable reproducible, comparable, and interpretable research in intelligent vehicles. Through a set of plenary talks and three focused panels, participants will examine what data is still missing despite industry-scale collections, what we should be measuring when we design benchmarks, and where future investments in testbeds can most effectively raise the rigor and trustworthiness of the community’s work. The workshop targets to define concrete, field-wide steps for building an open, reproducible foundation for intelligent vehicle research.
     </div>
 
-    <h2>Workshop Program</h2>
-    <p><em>Note: All speakers might be subject to change.</em></p>
-    
-    <table class="schedule-table">
-        <tbody>
-            <tr>
-                <td class="time-slot">08:30 - 08:45</td>
-                <td>
-                    <div class="session-title">Opening remarks and workshop overview</div>
-                    <span class="speaker">Cathy Wu, Associate Professor, Chair of RERITE, MIT</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="time-slot">08:45 - 09:00</td>
-                <td>
-                    <div class="session-title">State of the union - open science in transportation</div>
-                    <span class="speaker">Junyi Ji, PhD Candidate, Vanderbilt University</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="time-slot">09:00 - 09:30</td>
-                <td>
-                    <div class="session-title">Plenary Talk (TBD)</div>
-                    <span class="speaker">Henry Liu, Director of MCity and UMTRI, UMich</span>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="time-slot">09:30 - 10:30</td>
-                <td>
-                    <div class="session-title">Panel 1: Datasets</div>
-                    <span class="speaker">Moderator: Junyi Ji, Vanderbilt University</span>
-                    
-                    <div class="panel-details">
-                        <strong>Lightning Talks (5 min each):</strong>
-                        <ul>
-                            <li><strong>OpenACC:</strong> An open database for studying car-following and ACC systems<br>
-                            <em>Michalis Makridis, ETH Zürich</em></li>
-                            <li><strong>TBD</strong><br>
-                            <em>Danjue Chen, NC State University</em></li>
-                            <li><strong>LADDMS:</strong> Leveraging Advanced Data to Deliver Multimodal Safety<br>
-                            <em>Jonathan Sprinkle, Vanderbilt University</em></li>
-                        </ul>
-                        <strong>Discussion Topic:</strong> If the automated vehicle companies already have all the data, then what exactly is left for the rest of us to ask to keep the field moving?
-                    </div>
-                </td>
-            </tr>
+    <section class="schedule-section">
+        <h2 class="section-header">Workshop Program</h2>
+        <div style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 0.9rem;">
+            <p style="margin-bottom: 0.2rem;"><em>Note: All speakers and presentation materials might be subject to change.</em></p>
+            <p><em>* to be confirmed / proposed speaker</em></p>
+        </div>
+        
+        <div class="section-header" style="font-size: 1.4rem; margin-top: 3rem;">Plenary Talks</div>
+        
+        <div class="session-card">
+            <div class="time-slot">08:30 - 08:45</div>
+            <div class="session-title">Opening Remarks and Workshop Overview</div>
+            <div class="speaker">Cathy Wu, Associate Professor, Chair of <a href="https://rerite.org" target="_blank" style="color: inherit; text-decoration: underline;">RERITE</a>, MIT</div>
+        </div>
 
-            <tr>
-                <td class="time-slot">10:30 - 11:30</td>
-                <td>
-                    <div class="session-title">Panel 2: Benchmarks</div>
-                    <span class="speaker">Moderator: Cathy Wu, MIT</span>
-                    
-                    <div class="panel-details">
-                        <strong>Lightning Talks (5 min each):</strong>
-                        <ul>
-                            <li><strong>GPUDrive:</strong> Data-driven, multi-agent driving simulation at 1 million FPS<br>
-                            <em>Eugene Vinitsky*, NYU</em></li>
-                            <li><strong>Micro/Macro Calibration:</strong> Calibrating microscopic traffic models with macroscopic data<br>
-                            <em>Yanbing Wang*, ASU</em></li>
-                            <li><strong>TBD</strong><br>
-                            <em>Bolei Zhou*, UCLA</em></li>
-                        </ul>
-                        <strong>Discussion Topic:</strong> When we talk about benchmarks for intelligent vehicles, what exactly are we measuring in the first place?
-                    </div>
-                </td>
-            </tr>
+        <div class="session-card">
+            <div class="time-slot">08:45 - 09:00</div>
+            <div class="session-title">State of the Union - Open Science in Transportation</div>
+            <div class="speaker">Junyi Ji, PhD Candidate, Vanderbilt University</div>
+        </div>
 
-            <tr>
-                <td class="time-slot">11:30 - 12:30</td>
-                <td>
-                    <div class="session-title">Panel 3: Testbeds</div>
-                    <span class="speaker">Moderator: Danjue Chen, NC State University</span>
-                    
-                    <div class="panel-details">
-                        <strong>Lightning Talks (5 min each):</strong>
-                        <ul>
-                            <li><strong>Cyber-physical Mobility:</strong> An Open-Source Testbed for Networked AVs<br>
-                            <em>Bassam Alrifaee, Universität der Bundeswehr München</em></li>
-                            <li><strong>CDA.AI, OPV2V, and V2XReal testbeds</strong><br>
-                            <em>Jiaqi Ma, UCLA</em></li>
-                            <li><strong>TeraSim-World:</strong> Worldwide Safety-Critical Data Synthesis for End-to-End Autonomous Driving<br>
-                            <em>Jiawei Wang, UMich & Haowei Sun, SaferDrive AI</em></li>
-                        </ul>
-                        <strong>Discussion Topic:</strong> Where should the next big investment go to push testbeds, and the datasets and benchmarks they enable to the next level?
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="session-card">
+            <div class="time-slot">09:00 - 09:30</div>
+            <div class="session-title">Plenary Talk</div>
+            <div class="speaker">Henry Liu, Director of MCity and UMTRI, UMich</div>
+        </div>
+    </section>
 
-    <h2>Organizers</h2>
-    <div class="organizer-list">
-        <div class="organizer-item">
-            <strong>Junyi Ji</strong><br>Vanderbilt University
+    <section class="schedule-section">
+        <div class="section-header" style="font-size: 1.4rem;">Breakout Panels</div>
+        
+        <div class="session-card">
+            <div class="time-slot">09:30 - 10:30</div>
+            <div class="session-title">Panel 1: Datasets</div>
+            <div class="moderator">Moderator: Junyi Ji, Vanderbilt University</div>
+            <div class="panel-details">
+                <strong>Lightning Talks (5 min each):</strong>
+                <ul>
+                    <li><strong>OpenACC:</strong> An open database for studying car-following and ACC systems<br>
+                    <em>Michalis Makridis, ETH Zürich</em></li>
+                    <li><strong>TBD</strong><br>
+                    <em>Danjue Chen, NC State University</em></li>
+                    <li><strong>LADDMS:</strong> Leveraging Advanced Data to Deliver Multimodal Safety<br>
+                    <em>Jonathan Sprinkle, Vanderbilt University</em></li>
+                </ul>
+                <div class="discussion-topic">
+                    <p class="discussion-topic-text">If the automated vehicle companies already have all the data, then what exactly is left for us to ask to keep the field moving?</p>
+                </div>
+            </div>
         </div>
-        <div class="organizer-item">
-            <strong>Yongqi Dong</strong><br>RWTH Aachen
-        </div>
-        <div class="organizer-item">
-            <strong>Danjue Chen</strong><br>NC State University
-        </div>
-        <div class="organizer-item">
-            <strong>Zuduo Zheng</strong><br>University of Queensland
-        </div>
-        <div class="organizer-item">
-            <strong>Nicolas Saunier</strong><br>Polytechnique Montréal
-        </div>
-        <div class="organizer-item">
-            <strong>Cathy Wu</strong><br>MIT
-        </div>
-    </div>
-    
-    <hr>
-    <p><strong>ITSS Technical Committee:</strong> Automated Mobility in Mixed Traffic</p>
 
+        <div class="session-card">
+            <div class="time-slot">10:30 - 11:30</div>
+            <div class="session-title">Panel 2: Benchmarks</div>
+            <div class="moderator">Moderator: Cathy Wu, MIT</div>
+            <div class="panel-details">
+                <strong>Lightning Talks (5 min each):</strong>
+                <ul>
+                    <li><strong>GPUDrive:</strong> Data-driven, multi-agent driving simulation at 1 million FPS<br>
+                    <em>Eugene Vinitsky*, NYU</em></li>
+                    <li><strong>Micro/Macro Calibration:</strong> Calibrating microscopic traffic models with macroscopic data<br>
+                    <em>Yanbing Wang*, ASU</em></li>
+                    <li><strong>TBD</strong><br>
+                    <em>Bolei Zhou*, UCLA</em></li>
+                </ul>
+                <div class="discussion-topic">
+                    <p class="discussion-topic-text">When we talk about benchmarks for intelligent vehicles, what exactly are we measuring in the first place?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="session-card">
+            <div class="time-slot">11:30 - 12:30</div>
+            <div class="session-title">Panel 3: Testbeds</div>
+            <div class="moderator">Moderator: Danjue Chen, NC State University</div>
+            <div class="panel-details">
+                <strong>Lightning Talks (5 min each):</strong>
+                <ul>
+                    <li><strong>Cyber-physical Mobility:</strong> An Open-Source Testbed for Networked AVs<br>
+                    <em>Bassam Alrifaee, Universität der Bundeswehr München</em></li>
+                    <li><strong>CDA.AI, OPV2V, and V2XReal testbeds</strong><br>
+                    <em>Jiaqi Ma, UCLA</em></li>
+                    <li><strong>TeraSim-World:</strong> Worldwide Safety-Critical Data Synthesis for End-to-End Autonomous Driving<br>
+                    <em>Jiawei Wang, UMich & Haowei Sun, SaferDrive AI</em></li>
+                </ul>
+                <div class="discussion-topic">
+                    <p class="discussion-topic-text">Where should the next big investment go to push testbeds, and the datasets and benchmarks they enable to the next level?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="organizer-section">
+        <h2 class="section-header">Organizers</h2>
+        <div class="organizer-grid">
+            <a href="https://www.jijunyi.com" target="_blank" class="organizer-card">
+                <img src="images/organizers/junyi-ji.jpg" alt="Junyi Ji" class="organizer-photo" onerror="this.src='https://ui-avatars.com/api/?name=Junyi+Ji&background=0D7377&color=fff'">
+                <span class="organizer-name">Junyi Ji</span>
+                <span class="organizer-affiliation">Vanderbilt University</span>
+            </a>
+            <a href="https://yongqidong.github.io/" class="organizer-card">
+                <img src="images/organizers/yongqi-dong.png" alt="Yongqi Dong" class="organizer-photo" onerror="this.src='https://ui-avatars.com/api/?name=Yongqi+Dong&background=0D7377&color=fff'">
+                <span class="organizer-name">Yongqi Dong</span>
+                <span class="organizer-affiliation">RWTH Aachen</span>
+            </a>
+            <a href="https://ccee.ncsu.edu/people/danjuechen/" class="organizer-card">
+                <img src="images/organizers/danjue-chen.png" alt="Danjue Chen" class="organizer-photo" onerror="this.src='https://ui-avatars.com/api/?name=Danjue+Chen&background=0D7377&color=fff'">
+                <span class="organizer-name">Danjue Chen</span>
+                <span class="organizer-affiliation">NC State University</span>
+            </a>
+            <a href="http://www.connectedandautonomoustransport.com/" class="organizer-card">
+                <img src="images/organizers/zuduo-zheng.jpeg" alt="Zuduo Zheng" class="organizer-photo" onerror="this.src='https://ui-avatars.com/api/?name=Zuduo+Zheng&background=0D7377&color=fff'">
+                <span class="organizer-name">Zuduo Zheng</span>
+                <span class="organizer-affiliation">University of Queensland</span>
+            </a>
+            <a href="http://n.saunier.free.fr/saunier/" class="organizer-card">
+                <img src="images/organizers/nicolas-saunier.jpg" alt="Nicolas Saunier" class="organizer-photo" onerror="this.src='https://ui-avatars.com/api/?name=Nicolas+Saunier&background=0D7377&color=fff'">
+                <span class="organizer-name">Nicolas Saunier</span>
+                <span class="organizer-affiliation">Polytechnique Montréal</span>
+            </a>
+            <a href="http://www.wucathy.com/blog/" class="organizer-card">
+                <img src="images/organizers/cathy-wu.jpg" alt="Cathy Wu" class="organizer-photo" onerror="this.src='https://ui-avatars.com/api/?name=Cathy+Wu&background=0D7377&color=fff'">
+                <span class="organizer-name">Cathy Wu</span>
+                <span class="organizer-affiliation">MIT</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>RERITE workshop at 2026 IEEE Intelligent Vehicles Symposium</p>
+    </footer>
 </div>
 
 <script>
@@ -290,9 +478,7 @@
   })();
 </script>
 
-    <footer>
-      <p>&copy; MOST Project 2024 - 2026</p>
-    </footer>
+
   </div>
 </body>
 </html>
