@@ -53,27 +53,31 @@
     .abstract-box {
         background-color: #fff;
         border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 2.5rem;
+        border-radius: 16px;
+        padding: 3rem 3rem 2.75rem;
         margin-bottom: 4rem;
         box-shadow: var(--shadow-md);
-        line-height: 1.8;
+        line-height: 1.85;
+        text-align: justify;
+        hyphens: auto;
+        color: var(--text-dark);
         position: relative;
     }
-    
+
     .abstract-box::before {
         content: "Abstract";
         position: absolute;
-        top: -12px;
-        left: 20px;
+        top: -14px;
+        left: 24px;
         background: var(--primary-color);
         color: white;
-        padding: 2px 15px;
+        padding: 4px 16px;
         border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
+        font-size: 0.75rem;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
+        box-shadow: var(--shadow-sm);
     }
 
     .schedule-section { margin-bottom: 4rem; }
@@ -95,40 +99,45 @@
         margin: 10px auto 0;
     }
 
-    .session-card { 
-        background: #fff; 
-        border: 1px solid var(--border-color); 
-        border-radius: 12px; 
-        padding: 2rem; 
-        margin-bottom: 1.5rem; 
+    .session-card {
+        background: #fff;
+        border: 1px solid var(--border-color);
+        border-left: 4px solid var(--secondary-color);
+        border-radius: 12px;
+        padding: 1.75rem 2rem;
+        margin-bottom: 1.5rem;
         transition: var(--transition);
         box-shadow: var(--shadow-sm);
     }
-    
+
     .session-card:hover {
         box-shadow: var(--shadow-md);
-        border-color: var(--primary-light);
+        border-left-color: var(--primary-color);
+        transform: translateY(-2px);
     }
 
-    .session-card .time-slot { 
-        display: inline-block; 
-        background: var(--bg-cream); 
-        color: var(--primary-dark); 
-        padding: 0.4rem 1rem; 
-        border-radius: 30px; 
-        font-weight: 700; 
-        margin-bottom: 1rem; 
-        font-size: 0.85rem; 
+    .session-card .time-slot {
+        display: inline-block;
+        background: var(--bg-cream);
+        color: var(--primary-dark);
+        padding: 0.35rem 0.95rem;
+        border-radius: 30px;
+        font-weight: 700;
+        margin-bottom: 0.9rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.03em;
         border: 1px solid var(--secondary-color);
+        white-space: nowrap;
     }
 
-    .session-card .session-title { 
-        font-size: 1.25rem; 
-        margin-bottom: 0.5rem; 
-        color: var(--primary-dark); 
+    .session-card .session-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.25rem;
+        color: var(--primary-dark);
         font-family: 'Karla', sans-serif;
         font-weight: 700;
         letter-spacing: -0.01em;
+        line-height: 1.35;
     }
 
     .speaker, .moderator { 
@@ -168,13 +177,13 @@
         color: var(--primary-color);
     }
 
-    .discussion-topic { 
-        background-color: var(--bg-cream); 
+    .discussion-topic {
+        background-color: var(--bg-cream);
         border: 1px solid var(--border-color);
-        border-left: 6px solid var(--secondary-color); 
-        padding: 1.5rem 2rem; 
-        margin-top: 2rem; 
-        border-radius: 8px; 
+        border-left: 6px solid var(--secondary-color);
+        padding: 1.5rem 1.75rem;
+        margin-top: 1.75rem;
+        border-radius: 10px;
         position: relative;
     }
 
@@ -313,6 +322,8 @@
         <h1>Trustworthy and Open Science for Intelligent Vehicles</h1>
         <div class="subtitle">Datasets, Benchmarks, and Testbeds</div>
         <div class="event-info">A Half-day Workshop at <a href="https://ieee-iv.org/2026/" target="_blank" style="color: inherit; text-decoration: underline;">IEEE Intelligent Vehicles Symposium 2026</a></div>
+        <div class="event-info">June 22, 2026 | 08:30 - 12:30 | Brule B | MoWS10.1</div>
+        <div class="event-info">Detroit Marriott at the Renaissance Center</div>
     </header>
 
     <div class="abstract-box">
@@ -323,6 +334,7 @@
         <h2 class="section-header">Workshop Program</h2>
         <div style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 0.9rem;">
             <p style="margin-bottom: 0.2rem;"><em>Note: All speakers and presentation materials might be subject to change.</em></p>
+            <p style="margin-bottom: 0.2rem;"><em>Format: Each talk within a breakout session is a 5-minute lightning talk, with the remaining time dedicated to open panel discussion.</em></p>
         </div>
         
         <div class="section-header" style="font-size: 1.4rem; margin-top: 3rem;">Plenary Talks</div>
@@ -336,42 +348,18 @@
         <div class="session-card">
             <div class="time-slot">08:45 - 09:00</div>
             <div class="session-title">State of the Union - Open Science in Transportation</div>
-            <div class="speaker">Junyi Ji, PhD Candidate, Vanderbilt University</div>
-        </div>
-
-        <div class="session-card">
-            <div class="time-slot">09:00 - 09:30</div>
-            <div class="session-title">Plenary Talk</div>
-            <div class="speaker">Henry Liu, Director of MCity and UMTRI, UMich</div>
+            <div class="speaker">Junyi Ji, Research Engineer, Vanderbilt University</div>
         </div>
     </section>
 
     <section class="schedule-section">
         <div class="section-header" style="font-size: 1.4rem;">Breakout Panels</div>
         
-        <div class="session-card">
-            <div class="time-slot">09:30 - 10:30</div>
-            <div class="session-title">Panel 1: Datasets</div>
-            <div class="moderator">Moderator: Junyi Ji, Vanderbilt University</div>
-            <div class="panel-details">
-                <!-- <strong>Lightning Talks (5 min each):</strong> -->
-                <ul>
-                    <!-- <li><strong>TBD</strong><br>
-                    <em>TBD</em></li> -->
-                    <li><strong>TBD</strong><br>
-                    <em>Danjue Chen, Associate Professor, NC State University</em></li>
-                    <li><strong>LADDMS:</strong> Leveraging Advanced Data to Deliver Multimodal Safety<br>
-                    <em>Jonathan Sprinkle, Chair Professor, Vanderbilt University</em></li>
-                </ul>
-                <div class="discussion-topic">
-                    <p class="discussion-topic-text">If the automated vehicle companies already have all the data, then what exactly is left for us to ask to keep the field moving?</p>
-                </div>
-            </div>
-        </div>
+
 
         <div class="session-card">
-            <div class="time-slot">10:30 - 11:30</div>
-            <div class="session-title">Panel 2: Benchmarks</div>
+            <div class="time-slot">09:00 - 10:00</div>
+            <div class="session-title">Panel 1: Benchmarks</div>
             <div class="moderator">Moderator: Cathy Wu, MIT</div>
             <div class="panel-details">
                 <!-- <strong>Lightning Talks (5 min each):</strong> -->
@@ -390,24 +378,45 @@
         </div>
 
         <div class="session-card">
-            <div class="time-slot">11:30 - 12:30</div>
-            <div class="session-title">Panel 3: Testbeds</div>
-            <div class="moderator">Moderator: Danjue Chen, NC State University</div>
+            <div class="time-slot">10:15 - 11:15</div>
+            <div class="session-title">Panel 2: Datasets and Testbeds</div>
+            <div class="moderator">Moderator: Junyi Ji, Vanderbilt University</div>
             <div class="panel-details">
                 <!-- <strong>Lightning Talks (5 min each):</strong> -->
                 <ul>
-                    <li><strong>Cyber-physical Mobility:</strong> An Open-Source Testbed for Networked AVs<br>
-                    <em>Bassam Alrifaee, Professor, Universität der Bundeswehr München</em></li>
+                    <!-- <li><strong>TBD</strong><br>
+                    <em>TBD</em></li> -->
+                    <li><strong>TBD</strong><br>
+                    <em>Danjue Chen, Associate Professor, NC State University</em></li>
                     <li><strong>CDA.AI, OPV2V, and V2XReal testbeds</strong><br>
                     <em>Jiaqi Ma, Professor, UCLA</em></li>
                     <li><strong>TeraSim-World:</strong> Worldwide Safety-Critical Data Synthesis for End-to-End Autonomous Driving<br>
                     <em>Jiawei Wang, Lecturer, UMich & Haowei Sun, CEO, SaferDrive AI</em></li>
                 </ul>
                 <div class="discussion-topic">
-                    <p class="discussion-topic-text">Where should the next big investment go to push testbeds, and the datasets and benchmarks they enable to the next level?</p>
+                    <p class="discussion-topic-text">If the automated vehicle companies already have all the data, then what exactly is left for us to ask to keep the field moving?</p>
                 </div>
             </div>
         </div>
+
+        <div class="session-card">
+            <div class="time-slot">11:30 - 12:00</div>
+            <div class="session-title">Closing Talk</div>
+            <div class="speaker">Henry Liu, Director Of Mcity and Bruce D. Greenshields Collegiate Professor of Engineering, University of Michigan</div>
+        </div>
+
+        <div class="session-card">
+            <div class="time-slot">12:00 - 12:30</div>
+            <div class="session-title">Brainstorming: Open Questions and Fundamental Problems in Transportation</div>
+            <div class="moderator">Organizers & All Participants</div>
+            <div class="panel-details">
+                <p>An open-floor discussion inviting all participants to surface the open questions and fundamental, unsolved problems that should shape the next decade of intelligent vehicle and transportation research. Together we will identify priorities, gaps, and concrete community-wide steps toward an open and reproducible research foundation.</p>
+                <div class="discussion-topic">
+                    <p class="discussion-topic-text">What are the open questions and fundamental problems in transportation that our community should prioritize next?</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="organizer-section">
@@ -491,8 +500,5 @@
     });
   })();
 </script>
-
-
-  </div>
 </body>
 </html>
