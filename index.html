@@ -50,6 +50,39 @@
         color: var(--primary-color);
     }
 
+    .header-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        padding: 0.85rem 1.9rem;
+        background: var(--primary-color);
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        border-radius: 40px;
+        box-shadow: var(--shadow-md);
+        transition: var(--transition);
+    }
+
+    .header-cta:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+        color: #fff;
+    }
+
+    .header-cta::after {
+        content: "\2192";
+        transition: var(--transition);
+    }
+
+    .header-cta:hover::after {
+        margin-left: 3px;
+    }
+
     .abstract-box {
         background-color: #fff;
         border: 1px solid var(--border-color);
@@ -324,6 +357,7 @@
         <div class="event-info">A Half-day Workshop at <a href="https://ieee-iv.org/2026/" target="_blank" style="color: inherit; text-decoration: underline;">IEEE Intelligent Vehicles Symposium 2026</a></div>
         <div class="event-info">June 22, 2026 | 08:30 - 12:30 | Brule B | MoWS10.1</div>
         <div class="event-info">Detroit Marriott at the Renaissance Center</div>
+        <a href="linkhub.html" class="header-cta">Resources &amp; Calls Link Hub</a>
     </header>
 
     <div class="abstract-box">

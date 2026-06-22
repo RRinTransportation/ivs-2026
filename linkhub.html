@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <title>Link Hub | Open Science for Intelligent Vehicles | IEEE IV 2026</title>
+  <meta name="description" content="A curated hub of resources, calls, and opportunities from the RERITE workshop on Trustworthy and Open Science for Intelligent Vehicles at IEEE IV 2026.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Link Hub | Open Science for Intelligent Vehicles | IEEE IV 2026">
+  <meta property="og:description" content="Curated resources, calls, and opportunities for reproducible research in transportation.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Link Hub | Open Science for Intelligent Vehicles | IEEE IV 2026">
+  <meta property="twitter:description" content="Curated resources, calls, and opportunities for reproducible research in transportation.">
+
+  <style>
+    .content-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .linkhub-header {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    .linkhub-header .eyebrow {
+        display: inline-block;
+        background: var(--primary-color);
+        color: #fff;
+        padding: 5px 18px;
+        border-radius: 30px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        margin-bottom: 1.25rem;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .linkhub-header h1 {
+        font-size: 2.2rem;
+        color: var(--primary-dark);
+        margin-bottom: 0.6rem;
+    }
+
+    .linkhub-header .subtitle {
+        font-size: 1.25rem;
+        font-family: 'Cormorant', serif;
+        color: var(--text-light);
+        font-style: italic;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .linkhub-group { margin-bottom: 3.5rem; }
+
+    .linkhub-group-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--primary-dark);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .linkhub-group-title::before {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 3px;
+        background: var(--secondary-color);
+    }
+
+    .link-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .link-card {
+        background: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 1.75rem 1.75rem 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .link-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--secondary-color);
+        transition: var(--transition);
+    }
+
+    .link-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary-light);
+    }
+
+    .link-card:hover::before {
+        background: var(--primary-color);
+    }
+
+    .link-card .icon {
+        font-size: 1.6rem;
+        margin-bottom: 0.9rem;
+        line-height: 1;
+    }
+
+    .link-card .card-title {
+        font-size: 1.12rem;
+        font-weight: 700;
+        color: var(--primary-dark);
+        font-family: 'Karla', sans-serif;
+        line-height: 1.35;
+        margin-bottom: 0.5rem;
+    }
+
+    .link-card .card-desc {
+        font-size: 0.92rem;
+        color: var(--text-light);
+        line-height: 1.6;
+        flex-grow: 1;
+        margin-bottom: 1.25rem;
+    }
+
+    .link-card .card-action {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        letter-spacing: 0.02em;
+        transition: var(--transition);
+    }
+
+    .link-card:hover .card-action {
+        color: var(--primary-dark);
+    }
+
+    .link-card .card-action::after {
+        content: " \2192";
+        transition: var(--transition);
+    }
+
+    .link-card:hover .card-action::after {
+        margin-left: 4px;
+    }
+
+    .back-link {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .back-link a {
+        display: inline-block;
+        color: var(--text-light);
+        font-size: 0.92rem;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .back-link a:hover { color: var(--primary-color); }
+
+    footer {
+        text-align: center;
+        margin-top: 5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html" aria-label="Home">
+      <img src="/images/logo_png.png" alt="RERITE Logo">
+    </a>
+    <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" href="/index.html">Home</a></li>
+      <li><a class="nav-link" href="/about.html">About</a></li>
+      <li><a class="nav-link" href="/team.html">Team</a></li>
+      <li><a class="nav-link" href="/activities.html">Activities</a></li>
+      <li><a class="nav-link" href="/newsletter.html">Newsletter</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+        <div class="dropdown-menu" role="menu">
+          <div class="dropdown-container">
+            <p class="dropdown-section-label">Collections</p>
+            <a class="dropdown-item" href="./awesome-rerite.html">Open datasets and tools</a>
+            <a class="dropdown-item" href="../MOST">Open science explorer</a>
+            <a class="dropdown-item" href="../itsc24-rr-tutorial/">Tutorial (2024)</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="/getinvolved.html">Get Involved</a></li>
+      <li><a class="nav-link" href="https://groups.google.com/g/rerite/">Subscribe</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content-container">
+
+    <header class="linkhub-header">
+        <span class="eyebrow">IEEE IV 2026 Workshop</span>
+        <h1>Link Hub</h1>
+        <div class="subtitle">Resources, calls, and opportunities for trustworthy and open science in intelligent vehicles &amp; transportation.</div>
+    </header>
+
+    <section class="linkhub-group">
+        <h2 class="linkhub-group-title">Learn &amp; Explore</h2>
+        <div class="link-grid">
+            <a href="https://www.rerite.org/itsc24-rr-tutorial/" target="_blank" rel="noopener" class="link-card">
+                <span class="icon">📚</span>
+                <span class="card-title">Tutorial Materials</span>
+                <span class="card-desc">Hands-on materials from the ITSC 2024 reproducible research tutorial.</span>
+                <span class="card-action">Open tutorial</span>
+            </a>
+            <a href="https://github.com/RRinTransportation/awesome-rerite" target="_blank" rel="noopener" class="link-card">
+                <span class="icon">⭐</span>
+                <span class="card-title">Awesome RERITE</span>
+                <span class="card-desc">A curated collection of open datasets, tools, and resources for reproducible research.</span>
+                <span class="card-action">Browse on GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="linkhub-group">
+        <h2 class="linkhub-group-title">Calls &amp; Nominations</h2>
+        <div class="link-grid">
+            <a href="https://forms.gle/Yv2i3EoPYoBoPDhr8" target="_blank" rel="noopener" class="link-card">
+                <span class="icon">🎓</span>
+                <span class="card-title">Call for Nominations</span>
+                <span class="card-desc">Nominate your papers for reproducibility student projects.</span>
+                <span class="card-action">Submit a nomination</span>
+            </a>
+            <a href="https://docs.google.com/forms/d/1prVvMwnGHrNPmuouOph2OgTh0ea2pfXL-K3uF3RIRWY/viewform" target="_blank" rel="noopener" class="link-card">
+                <span class="icon">📝</span>
+                <span class="card-title">Call for Interest: Special Issue</span>
+                <span class="card-desc">TR Part C / T-ITS Special Issue on Evaluations &amp; Datasets — express your interest.</span>
+                <span class="card-action">Express interest</span>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdwuXdMT3k8yTh_oGjBY0hZsVnxt-GwO4m2Gn3WvnbKnxXPQ/viewform" target="_blank" rel="noopener" class="link-card">
+                <span class="icon">🏆</span>
+                <span class="card-title">Reproducible Research Prize</span>
+                <span class="card-desc">Apply for the Reproducible Research Prize at hEART 2026.</span>
+                <span class="card-action">Apply now</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="linkhub-group">
+        <h2 class="linkhub-group-title">Publish &amp; Participate</h2>
+        <div class="link-grid">
+            <a href="https://link.springer.com/collections/dgachijbgi" target="_blank" rel="noopener" class="link-card">
+                <span class="icon">📰</span>
+                <span class="card-title">European Transport Research Review</span>
+                <span class="card-desc">Reproducible Research in Transportation — participate in the ETRR collection.</span>
+                <span class="card-action">View collection</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="back-link">
+        <a href="/index.html">&larr; Back to the workshop home</a>
+    </div>
+
+    <footer>
+        <p>RERITE workshop at <a href="https://ieee-iv.org/2026/" target="_blank" style="color: inherit; text-decoration: underline;">IEEE Intelligent Vehicles Symposium 2026</a></p>
+    </footer>
+</div>
+
+<script>
+  (function() {
+    const navbar = document.querySelector('.navbar');
+    const toggle = navbar?.querySelector('.navbar-toggle');
+    const navList = navbar?.querySelector('.navbar-nav');
+
+    if (!navbar || !toggle || !navList) {
+      return;
+    }
+
+    const closeMenu = () => {
+      navbar.classList.remove('navbar--open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    toggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isOpen = navbar.classList.toggle('navbar--open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navbar.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    navList.addEventListener('click', (event) => {
+      if (event.target.closest('a')) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        closeMenu();
+      }
+    });
+  })();
+</script>
+</body>
+</html>
